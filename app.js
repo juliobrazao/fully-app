@@ -7,7 +7,9 @@ const port = process.env.PORT || 3000
 /* CREATE */
 app.route('/')
     .get((req, res) => {
-        res.render('inserter')
+        res.send("It's working online!")
+    })
+        /*res.render('inserter')
     })
     .post((req, res) => {
 
@@ -31,7 +33,7 @@ app.listen(port, () => {
     console.log(`Listening at ${port}.`)
 })
 
-/* READ */
+/* READ
 app.route('/list')
     .get((req, res) => {
 
@@ -49,7 +51,7 @@ app.route('/list')
     })
 
 
-/* UPDATE */
+/* UPDATE
 app.route('/edit/:id')
     .get((req, res) => {
         
@@ -66,7 +68,7 @@ app.route('/edit/:id')
         })
     })
 
-/* DELETE */
+/* DELETE
 app.route('/delete/:primeiro_nome')
     .get((req, res) => {
 
@@ -79,4 +81,4 @@ app.route('/delete/:primeiro_nome')
                 res.send(err)
             }
         })
-    })
+    }) */
