@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+body {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+table {
+    font-weight: normal;
+    text-align: center;
+}
+thead {
+    font-weight: bold;
+    color: #ccc;
+    background: #222;
+}
+td {
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+}
+tr:nth-child(even) {
+    background: #eee;
+}
+form {
+    text-align: center;
+}
+fieldset {
+    width: 45%;
+    padding: 30px;
+    font-size: 12px;
+}
+legend {
+    padding: 20px;
+}

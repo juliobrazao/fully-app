@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Data Inserter - NODEJS</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <fieldset>
+            <legend>Editar Pessoa</legend>
+            <label for="primeiro_nome">Primeiro Nome</label><br>
+            <input type="text" name="primeiro_nome" id="primeiro_nome" value="<%= data[0].primeiro_nome %>"><br><br>
+
+            <label for="segundo_nome">Segundo Nome</label><br>
+            <input type="text" name="segundo_nome" id="segundo_nome" value="<%= data[0].segundo_nome %>"><br><br>
+
+            <label for="idade">Idade</label><br>
+            <input type="number" name="idade" id="idade" value="<%= data[0].idade %>"><br><br>
+
+            <input type="submit" value="Alterar">
+
+            <a href="/"><button>Cancelar</button></a>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Lista Completa</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <td>Primeiro Nome</td>
+            <td>Segundo Nome</td>
+            <td>Idade</td>
+            <td>Ação</td>
+        </thead>
+
+        <% for (let i=0; i < raw.length; i++) { %>
+        <tr>
+            <td><%= raw[i].primeiro_nome %></td>
+            <td><%= raw[i].segundo_nome %></td>
+            <td><%= raw[i].idade %></td>
+            <td><a href="edit/<%= raw[i].id %>"><button>Editar</button></a> <a href="delete/<%= raw[i].primeiro_nome %>"><button>Excluir</button></a></td>
+        </tr>
+        <% } %>
+    </table>
+
+    <br><br>
+    <a href="/">
+        <button>Adicionar</button>
+    </a>
+</body>
+</html>
