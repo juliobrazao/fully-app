@@ -4,6 +4,8 @@ const database = require('./config/database')
 
 const port = process.env.PORT || 80
 
+app.listen(port)
+
 /* CREATE */
 app.route('/')
     .get((req, res) => {
