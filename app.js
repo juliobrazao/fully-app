@@ -2,7 +2,7 @@ require('dotenv').config()
 const app = require('./config/server')
 const database = require('./config/database')
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 80
 
 /* CREATE */
 app.route('/')
